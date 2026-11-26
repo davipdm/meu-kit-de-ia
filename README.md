@@ -1,6 +1,6 @@
-# Meu Kit de IA — Troubleshooting DNS
+# Meu Kit de IA — Infraestrutura e Rotina Diária
 
-Kit de apoio ao diagnóstico de falhas de resolução de nomes com inteligência artificial e supervisão humana.
+Kit de apoio ao diagnóstico de falhas DNS e à organização diária de e-mails com inteligência artificial e supervisão humana.
 
 Projeto de Davi Mendes, adaptado do desafio **Meu Kit de IA** da [DIO](https://dio.me), cujo material original foi criado pelo **Expert Bruno Lima**. Os modelos originais continuam nas pastas do repositório; esta adaptação acrescenta o caso de infraestrutura e personaliza a apresentação.
 
@@ -76,3 +76,9 @@ A documentação simulada pode ser apresentada como estudo de caso, mas não com
 ## Créditos
 
 Base educacional: [DIO](https://dio.me), desafio Meu Kit de IA, Expert Bruno Lima. Adaptação para troubleshooting DNS: Davi Mendes, com apoio de IA na elaboração dos materiais. A atribuição ao material original é mantida.
+
+## Automação para o dia a dia — e-mails
+
+A [proposta de revisão diária de e-mails](05-delegacao-e-automacao/04-revisao-diaria-emails.md) documenta o fluxo de leitura, resumo, identificação de prazos e ações sugeridas. Inclui prompt reutilizável, exemplo fictício, tratamento de falhas e critérios de aceite.
+
+**Somente documentação:** nenhuma conta foi acessada e nenhuma rotina foi agendada. A proposta não envia, exclui ou altera mensagens. Conta, pastas, horário, permissões e local privado do resumo serão definidos somente se houver decisão futura de implementação. Dados reais não devem ser publicados no repositório.
