@@ -48,3 +48,6 @@ Não há prints nem saídas reais para anexar.
 
 ## Próxima utilização
 Após confirmação do caso pelo usuário, substituir o contexto por informações mínimas sanitizadas, reapresentar o plano e registrar apenas checkpoints que efetivamente ocorrerem. Use o [template](../02-templates/04-troubleshooting.md), a [skill](../04-skills/03-skill-analista-infraestrutura.md) e o [checklist](../03-checklists/04-validacao-troubleshooting.md).
+
+## Complemento — exercício de DNS público
+Para praticar execução e resultado proposto, seguir o exercício adicional no [caso prático](../06-casos-praticos/01-incidente-infraestrutura.md). Ele é independente de E1–E3: comparar consultas de example.com no DNS atual e no 1.1.1.1 antes de alterar configuração. A mudança opcional é exclusiva de laboratório/pessoal autorizado, em etapa separada, com registro anterior, validação e rollback. Não aplicar DNS público a nomes internos ou usar o domínio fictício portal.example.test nessa comparação. Nenhuma execução, melhora ou aprovação de coleta foi registrada.
