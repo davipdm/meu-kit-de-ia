@@ -121,3 +121,6 @@ Esta extensão adapta o kit para investigação supervisionada de incidentes. O 
 | [#8](https://github.com/davipdm/meu-kit-de-ia/issues/8) | Revisão v1.0 | Pendente; sem tag ou release publicada |
 
 As alterações estão no [PR #9](https://github.com/davipdm/meu-kit-de-ia/pull/9), em rascunho. Para preparar a v1.0: revisar o material, confirmar o caso real autorizado, registrar a supervisão e os resultados observados, preencher a entrega e validar o encerramento. Não publicar dados reais, credenciais ou informações identificáveis.
+
+### Exercício DNS com passos de execução
+O [caso prático](06-casos-praticos/01-incidente-infraestrutura.md) agora inclui comparação do DNS configurado com 1.1.1.1, mudança opcional no Windows pessoal/laboratório, validação, rollback e dicas de DNS seguro. O exercício de nomes públicos é separado de E1–E3 e permanece simulado, sem resultados executados.
