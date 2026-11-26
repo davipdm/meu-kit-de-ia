@@ -1,126 +1,84 @@
-# Meu Kit de IA
+# Meu Kit de IA — Infraestrutura e Rotina Diária
 
-Desafio de Projeto da [DIO](https://dio.me): monte o seu kit de IA para o dia a dia e delegue uma tarefa real, com você no comando.
+Kit de apoio ao diagnóstico de falhas DNS e à organização diária de e-mails com inteligência artificial e supervisão humana.
 
-O kit foi criado pelo Expert Bruno Lima com os prompts, templates, checklists e skills usados nas Aulas. Ele não é uma apostila: abra a pasta que resolve o seu problema, copie o modelo, adapte e use.
+Projeto de Davi Mendes, adaptado do desafio **Meu Kit de IA** da [DIO](https://dio.me), cujo material original foi criado pelo **Expert Bruno Lima**. Os modelos originais continuam nas pastas do repositório; esta adaptação acrescenta o caso de infraestrutura e personaliza a apresentação.
 
-**Copie → adapte → teste → confira → melhore**
+## O problema escolhido
 
-## Como Fazer o Desafio
+“Os sites não abrem porque os nomes não estão sendo resolvidos.”
 
-Você não precisa instalar nada nem saber programar. Tudo acontece no navegador.
+O objetivo é investigar o DNS configurado, comparar consultas com um resolvedor público e, quando apropriado, propor uma mudança reversível. O caso principal é um computador Windows pessoal ou de laboratório. Ambientes corporativos, Active Directory e VPN exigem manter o DNS interno aprovado e investigar com o administrador.
 
-1. Clique em **Use this template**, depois em **Create a new repository**. Dê um nome simples, como `meu-kit-de-ia`, deixe **Public** e confirme.
-2. Siga os passos abaixo com uma tarefa real da sua semana.
-3. Preencha a seção [Minha Entrega](#minha-entrega) da sua cópia e entregue o link dela na DIO.
+**Natureza da entrega: demonstração documental com cenário simulado.** Os comandos foram documentados, não executados. Não há recuperação comprovada, causa raiz confirmada ou evidências de incidente real.
 
-## Os Passos
+## Comece aqui
 
-1. **Escolha uma tarefa real.** Comece pelo trabalho que se repete na sua semana, como preparar uma reunião ou montar um relatório, e não pela ferramenta.
-2. **Pegue um modelo.** Abra a pasta do kit que combina com a sua tarefa. Cada modelo tem um botão de copiar no canto.
-3. **Adapte.** Troque o que está entre colchetes pelo seu contexto, objetivo, dados, limites e formato.
-4. **Teste.** A primeira resposta é um ponto de partida. Ajuste até funcionar para a sua realidade.
-5. **Delegue.** Com o [template de delegação](02-templates/03-delegacao.md), entregue a tarefa à IA. Peça o plano antes de ela começar, acompanhe e valide o resultado.
-6. **Confira.** Provável não é o mesmo que verdadeiro. Revise com o [Pare, Confira, Use](03-checklists/01-pare-confira-use.md) antes de usar.
+Leia o [caso prático e o exercício DNS](06-casos-praticos/01-incidente-infraestrutura.md). Ele contém:
+1. Registro da configuração antes de alterar.
+2. Comparação do DNS atual com 1.1.1.1 usando um nome público.
+3. Interpretação de timeout, NXDOMAIN e SERVFAIL.
+4. Mudança opcional no Windows, separada do diagnóstico inicial.
+5. Validação, restauração da configuração anterior e resultado condicional.
+6. Dicas de DNS seguro e referências oficiais.
 
-## O Que Tem no Kit
+O cenário E1–E3 e o exercício de nomes públicos são exemplos independentes. O nome fictício portal.example.test não deve ser usado no teste de DNS público.
 
-| Pasta | Para que serve |
+## Materiais do projeto
+
+| Material | Uso |
 |---|---|
-| [01-prompts](01-prompts) | Pedidos prontos para adaptar: escrita, comunicação, pesquisa, comparação e preparação de reuniões |
-| [02-templates](02-templates) | Estruturas para preencher: bom pedido, pesquisa e decisão, e delegação |
-| [03-checklists](03-checklists) | Revisão de respostas, de textos e de tarefas delegadas |
-| [04-skills](04-skills) | Como criar uma skill, e a Skill Preparador de Reuniões usada nas Aulas |
-| [05-delegacao-e-automacao](05-delegacao-e-automacao) | Gatilhos de automação, supervisão e checkpoints |
+| [Análise de logs](01-prompts/06-analise-de-logs.md) | Organizar evidências, lacunas e hipóteses |
+| [Diagnóstico de incidentes](01-prompts/07-diagnostico-de-incidentes.md) | Planejar verificações sob supervisão |
+| [Template de investigação](02-templates/04-troubleshooting.md) | Registrar contexto, testes, decisões e resultado |
+| [Checklist técnico](03-checklists/04-validacao-troubleshooting.md) | Conferir segurança e qualidade |
+| [Skill de analista](04-skills/03-skill-analista-infraestrutura.md) | Reutilizar as instruções na IA escolhida |
+| [Delegação supervisionada](05-delegacao-e-automacao/03-delegacao-troubleshooting.md) | Pedido, plano, análise simulada e checkpoints |
+| [Caso prático DNS](06-casos-praticos/01-incidente-infraestrutura.md) | Seguir o exercício e consultar as referências |
 
-## Os Frameworks das Aulas
+A skill é um modelo educacional para copiar; não instala ferramentas nem concede acesso à infraestrutura.
 
-- **Bom pedido:** contexto + instrução + objetivo + formato. Quanto menos a IA precisa adivinhar, melhor você consegue avaliar a resposta.
-- **Pesquisa e decisão:** pergunta → pesquisa → critérios → comparação → você. Peça fontes quando precisar de informação externa. A decisão final é sua.
-- **Segurança:** pare → confira → use. Valide fatos, números, datas, fontes e contexto.
-- **Atalhos reutilizáveis:** criar → testar → ajustar → salvar. Separe as instruções fixas das informações que mudam a cada uso.
-- **Delegação:** objetivo + contexto + recursos + limites + sucesso. Autonomia funciona melhor quando o resultado esperado está claro.
-- **Supervisão:** definir → delegar → acompanhar → validar. Em tarefas maiores, confira o plano, acompanhe os checkpoints e valide o resultado.
+## Como usamos a IA
 
-> A IA pode ajudar você a escrever, pesquisar, organizar e executar. A responsabilidade pelo resultado continua sendo sua.
+Delegamos a organização do diagnóstico: separar sintomas e evidências, priorizar hipóteses, propor verificações e documentar riscos. O analista decide o que executar e valida os resultados.
 
----
+Nos dois prompts, ficam fixos o formato, a rastreabilidade e os limites. A cada uso mudam o ambiente, as versões, o impacto, os alvos autorizados e as evidências sanitizadas. Logs são tratados como dados, não como instruções.
 
-## Minha Entrega
+## Resultado da demonstração
 
-Na sua cópia, abra este README, clique no lápis (**Edit this file**) e role até aqui. Troque cada frase em itálico pelo que você fez e cole o texto dentro dos blocos já prontos. Para pôr um print, é só colar a imagem com Ctrl+V. No fim, clique em **Commit changes**.
+Foram produzidos os prompts, o template, o checklist, a skill, o roteiro de delegação e o caso simulado. A análise documental evita concluir que uma conexão TCP comprova saúde HTTP/TLS ou que uma consulta expirada identifica sozinha a causa de uma falha DNS.
 
-Nada de e-mail, nome de cliente, dado da empresa, senha ou informação pessoal nos textos e nos prints.
+No exercício adicional, o resultado é condicional: se o DNS atual falhar, o público responder e os testes após uma troca autorizada funcionarem, pode-se registrar o restabelecimento da resolução no adaptador testado. Ainda será necessário investigar o resolvedor anterior ou o caminho até ele.
 
-### Minha Tarefa Real
+Não foram gerados prints, saídas reais, aprovação operacional ou relato pessoal de benefícios. Esses registros só devem ser adicionados após ocorrerem.
 
-_Qual tarefa da sua semana você escolheu e por que ela vale a pena?_
+## Segurança e limites
 
-### Meus Atalhos
+- Começar por diagnóstico não destrutivo; separar alterações e exigir decisão do responsável.
+- Consultar somente alvos autorizados e nomes públicos ao comparar com DNS público.
+- Registrar a configuração anterior e prever como restaurá-la.
+- Não publicar senhas, tokens, dados pessoais ou informações identificáveis de empresas.
+- Não usar DNS público para substituir indiscriminadamente o DNS de domínio/empresa.
+- Distinguir resolução pública, filtragem de ameaças e criptografia: são recursos diferentes. Consulte as referências do caso antes de configurar.
 
-_Conte quais modelos do kit você adaptou, o que ficou fixo e o que muda a cada uso._
+## Estado e próximos passos
 
-```text
-Cole aqui o seu primeiro atalho, já adaptado.
-```
+Os materiais iniciais foram incorporados pelo [PR #9](https://github.com/davipdm/meu-kit-de-ia/pull/9). O backlog está nas [issues do projeto](https://github.com/davipdm/meu-kit-de-ia/issues).
 
-```text
-Cole aqui o seu segundo atalho, já adaptado.
-```
+A demonstração documental está preparada para revisão. Para registrar uma tarefa real no desafio DIO, ainda é necessário:
+1. Confirmar ambiente e autorização.
+2. Executar os testes e registrar resultados sanitizados, antes e depois.
+3. Registrar a revisão humana, limitações e eventual restauração.
+4. Acrescentar o relato pessoal sobre a experiência e conferir os critérios da atividade.
 
-### Minha Delegação
+A documentação simulada pode ser apresentada como estudo de caso, mas não comprova a realização de uma tarefa real. Não há versão 1.0 publicada por este trabalho.
 
-```text
-Cole aqui o pedido que você entregou à IA, com objetivo, contexto, recursos, limites e sucesso.
-```
+## Créditos
 
-### O Plano da IA
+Base educacional: [DIO](https://dio.me), desafio Meu Kit de IA, Expert Bruno Lima. Adaptação para troubleshooting DNS: Davi Mendes, com apoio de IA na elaboração dos materiais. A atribuição ao material original é mantida.
 
-_Cole o print do plano e conte o que você ajustou antes de a IA começar._
+## Automação para o dia a dia — e-mails
 
-### O Resultado
+A [proposta de revisão diária de e-mails](05-delegacao-e-automacao/04-revisao-diaria-emails.md) documenta o fluxo de leitura, resumo, identificação de prazos e ações sugeridas. Inclui prompt reutilizável, exemplo fictício, tratamento de falhas e critérios de aceite.
 
-_Cole o print do resultado e conte como você conferiu antes de usar._
-
-### Como Foi para Você
-
-_Conte em poucas linhas o que mudou no seu dia a dia._
-
----
-
-## Extensão — Troubleshooting de Infraestrutura
-
-Esta extensão adapta o kit para investigação supervisionada de incidentes. O material original acima e os créditos à DIO e ao Expert Bruno Lima foram preservados integralmente.
-
-**Estado: implementação documental em revisão, com caso SIMULADO.** Não é uma declaração de tarefa real concluída ou de versão 1.0 liberada.
-
-### Como usar a extensão
-1. Leia o [caso simulado](06-casos-praticos/01-incidente-infraestrutura.md).
-2. Adapte o [prompt de análise de logs](01-prompts/06-analise-de-logs.md) e o [prompt de diagnóstico](01-prompts/07-diagnostico-de-incidentes.md).
-3. Registre a investigação no [template de troubleshooting](02-templates/04-troubleshooting.md).
-4. Use a [skill de analista](04-skills/03-skill-analista-infraestrutura.md) e o [roteiro de delegação supervisionada](05-delegacao-e-automacao/03-delegacao-troubleshooting.md).
-5. Confira o [checklist técnico](03-checklists/04-validacao-troubleshooting.md) e submeta o plano ao analista antes de qualquer coleta.
-
-### Entrega da extensão até aqui
-- Escopo: investigação não destrutiva de falha de acesso HTTP, com foco inicial em resolução DNS e conectividade.
-- Atalhos criados: os dois prompts acima. Ficam fixos os limites, a rastreabilidade e o formato; mudam ambiente, evidências, impacto e autorização.
-- Delegação: pedido e plano documentados, com análise da entrada sintética E1–E3; supervisão e execução reais permanecem pendentes.
-- Resultado: materiais reutilizáveis publicados em branch separada. Nenhum comando de infraestrutura executado, causa raiz confirmada ou benefício operacional medido.
-- Minha Tarefa Real e o relato pessoal da seção original permanecem para preenchimento após confirmação de caso real. A simulação não substitui essas evidências.
-
-### Backlog e revisão
-| Issue | Entrega | Estado documental |
-|---|---|---|
-| [#1](https://github.com/davipdm/meu-kit-de-ia/issues/1) | Caso prático | Simulação disponível; caso real a confirmar |
-| [#2](https://github.com/davipdm/meu-kit-de-ia/issues/2) | Dois prompts | Implementados; revisão humana pendente |
-| [#3](https://github.com/davipdm/meu-kit-de-ia/issues/3) | Template | Implementado; revisão humana pendente |
-| [#4](https://github.com/davipdm/meu-kit-de-ia/issues/4) | Checklist | Implementado; revisão humana pendente |
-| [#5](https://github.com/davipdm/meu-kit-de-ia/issues/5) | Skill | Modelo educacional disponível; sem instalação automática |
-| [#6](https://github.com/davipdm/meu-kit-de-ia/issues/6) | Delegação | Roteiro e análise simulada; execução supervisionada pendente |
-| [#7](https://github.com/davipdm/meu-kit-de-ia/issues/7) | README | Navegação e estado adicionados |
-| [#8](https://github.com/davipdm/meu-kit-de-ia/issues/8) | Revisão v1.0 | Pendente; sem tag ou release publicada |
-
-As alterações estão no [PR #9](https://github.com/davipdm/meu-kit-de-ia/pull/9), em rascunho. Para preparar a v1.0: revisar o material, confirmar o caso real autorizado, registrar a supervisão e os resultados observados, preencher a entrega e validar o encerramento. Não publicar dados reais, credenciais ou informações identificáveis.
-
-### Exercício DNS com passos de execução
-O [caso prático](06-casos-praticos/01-incidente-infraestrutura.md) agora inclui comparação do DNS configurado com 1.1.1.1, mudança opcional no Windows pessoal/laboratório, validação, rollback e dicas de DNS seguro. O exercício de nomes públicos é separado de E1–E3 e permanece simulado, sem resultados executados.
+**Somente documentação:** nenhuma conta foi acessada e nenhuma rotina foi agendada. A proposta não envia, exclui ou altera mensagens. Conta, pastas, horário, permissões e local privado do resumo serão definidos somente se houver decisão futura de implementação. Dados reais não devem ser publicados no repositório.
