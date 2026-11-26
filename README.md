@@ -85,3 +85,42 @@ _Cole o print do resultado e conte como você conferiu antes de usar._
 ### Como Foi para Você
 
 _Conte em poucas linhas o que mudou no seu dia a dia._
+
+---
+
+## Extensão — Troubleshooting de Infraestrutura
+
+Esta extensão adapta o kit para investigação supervisionada de incidentes. O material original acima e os créditos à DIO e ao Expert Bruno Lima foram preservados integralmente.
+
+**Estado: implementação documental em revisão, com caso SIMULADO.** Não é uma declaração de tarefa real concluída ou de versão 1.0 liberada.
+
+### Como usar a extensão
+1. Leia o [caso simulado](06-casos-praticos/01-incidente-infraestrutura.md).
+2. Adapte o [prompt de análise de logs](01-prompts/06-analise-de-logs.md) e o [prompt de diagnóstico](01-prompts/07-diagnostico-de-incidentes.md).
+3. Registre a investigação no [template de troubleshooting](02-templates/04-troubleshooting.md).
+4. Use a [skill de analista](04-skills/03-skill-analista-infraestrutura.md) e o [roteiro de delegação supervisionada](05-delegacao-e-automacao/03-delegacao-troubleshooting.md).
+5. Confira o [checklist técnico](03-checklists/04-validacao-troubleshooting.md) e submeta o plano ao analista antes de qualquer coleta.
+
+### Entrega da extensão até aqui
+- Escopo: investigação não destrutiva de falha de acesso HTTP, com foco inicial em resolução DNS e conectividade.
+- Atalhos criados: os dois prompts acima. Ficam fixos os limites, a rastreabilidade e o formato; mudam ambiente, evidências, impacto e autorização.
+- Delegação: pedido e plano documentados, com análise da entrada sintética E1–E3; supervisão e execução reais permanecem pendentes.
+- Resultado: materiais reutilizáveis publicados em branch separada. Nenhum comando de infraestrutura executado, causa raiz confirmada ou benefício operacional medido.
+- Minha Tarefa Real e o relato pessoal da seção original permanecem para preenchimento após confirmação de caso real. A simulação não substitui essas evidências.
+
+### Backlog e revisão
+| Issue | Entrega | Estado documental |
+|---|---|---|
+| [#1](https://github.com/davipdm/meu-kit-de-ia/issues/1) | Caso prático | Simulação disponível; caso real a confirmar |
+| [#2](https://github.com/davipdm/meu-kit-de-ia/issues/2) | Dois prompts | Implementados; revisão humana pendente |
+| [#3](https://github.com/davipdm/meu-kit-de-ia/issues/3) | Template | Implementado; revisão humana pendente |
+| [#4](https://github.com/davipdm/meu-kit-de-ia/issues/4) | Checklist | Implementado; revisão humana pendente |
+| [#5](https://github.com/davipdm/meu-kit-de-ia/issues/5) | Skill | Modelo educacional disponível; sem instalação automática |
+| [#6](https://github.com/davipdm/meu-kit-de-ia/issues/6) | Delegação | Roteiro e análise simulada; execução supervisionada pendente |
+| [#7](https://github.com/davipdm/meu-kit-de-ia/issues/7) | README | Navegação e estado adicionados |
+| [#8](https://github.com/davipdm/meu-kit-de-ia/issues/8) | Revisão v1.0 | Pendente; sem tag ou release publicada |
+
+As alterações estão no [PR #9](https://github.com/davipdm/meu-kit-de-ia/pull/9), em rascunho. Para preparar a v1.0: revisar o material, confirmar o caso real autorizado, registrar a supervisão e os resultados observados, preencher a entrega e validar o encerramento. Não publicar dados reais, credenciais ou informações identificáveis.
+
+### Exercício DNS com passos de execução
+O [caso prático](06-casos-praticos/01-incidente-infraestrutura.md) agora inclui comparação do DNS configurado com 1.1.1.1, mudança opcional no Windows pessoal/laboratório, validação, rollback e dicas de DNS seguro. O exercício de nomes públicos é separado de E1–E3 e permanece simulado, sem resultados executados.
